@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .demotextFont {
+        @apply text-5xl
+    }
+}
+
+@layer utilities {
+    :root {
+        --dark: #1d1d1d;
+        --grey-dark: #414141;
+        --light: #fff;
+        --mid: #ededed;
+        --grey: #989898;
+        --gray: #989898;
+        --green: #28a92b;
+        --green-dark: #4e9815;
+        --green-light: #6fb936;
+        --blue: #2c7ad2;
+        --purple: #8d3dae;
+        --red: #c82736;
+        --orange: #e77614;
+        accent-color: var(--green);
+    }
+
+    body {
+        font-family: 'Signika Negative', sans-serif, Arial;
+        overscroll-behavior: none;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+         background-image: url("/blackbg.png"); 
+        background-repeat: repeat;
+    }
+/* index.css or a separate CSS file */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+    #smooth-content {
+        overflow: visible;
+        width: 100%;
+        /* set a height because the contents are position: absolute, thus natively there's no height */
+
+    }
+
+    .heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+
+
+    #rect text {
+        pointer-events: none;
+      }
+
+    path {
+        stroke-width: 2;
+        stroke: gray;
+      }
+      svg {
+        overflow: visible;
+        height: 100%;
+        
+        /* Fix Safari rendering bug */
+        transform: translateZ(0);
+      }
+    .mainBg {
+        background-image: url("/victoria1.png");
+        min-width: 100vw;
+        min-height: 180vh;
+        background-size: contain;
+        background-size: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        /* position: absolute; */
+        /* background-color:#005484 ; */
+        scale: 1;
+    }
+
+    .introText p {
+        font-size: 10rem;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    header {
+        position: absolute;
+        width: 100vw;
+        z-index: 999;
+        color: #fff;
+        margin-top: -50px;
+    }
+
+    nav a {
+        color: #fff;
+        font-weight: 100;
+    }
+
+    .heroText {
+        padding-top: 100px;
+        padding-left: 10%;
+        
+    }
+   
+
+    .introText {
+        width: 800px;
+        font-size: 2rem;
+        color: #fff;
+        margin-top: -10vh;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+    }
+
+    .kolkata {
+        font-size: 1rem;
+        color: red;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        padding-bottom: 45h;
+    }
+.SvgCoveringBg{ background-image: url("/bridge-night.svg"); width: 100vw; }
+    .kolkata p {
+        font-size: 20rem;
+        color: red;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        padding-bottom: 40vh;
+    }
+
+
+    .cloude {
+        position: absolute;
+        left: -25%;
+        top: 35vh;
+        z-index: 2;
+    }
+
+    .cloude1 {
+        position: absolute;
+        top: 200px;
+        z-index: 2;
+        opacity: 0.9;
+    }
+
+    .cloude2 {
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        right: 100px;
+        scale: 2;
+        opacity: 0.5;
+    }
+    .cloude3 {
+        position: absolute;
+        z-index: 1;
+        top: 10vh;
+        left: 10vh;
+        scale: 4;
+        opacity: 0.5;
+    }
+.animSvg{ top: 100vh;}
+    .branding {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        opacity: 1;
+        scale: 0.8;
+    }
+
+    .services {
+        font-family: 'Abril Fatface', cursive;
+        text-align: center;
+
+    }
+
+#wraperPinSection{ min-height: 100vh;}
+    .coverLine {   
+        opacity: 0;  
+        height: 100vh;
+        width: 100vh;
+        margin: auto;
+        padding-bottom: 50px;
+        position: relative;
+        scale: 0.2;
+        opacity: 0;
+        will-change: transform;
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(20, 18, 39, 0.006) 4%, rgb(28, 8, 70) 6%, rgba(0,0,0,0) 76%);
+    }
+
+
+    .line_0 {background-color:#161616;     
+        height: 50%;
+        width: 50%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        left: 25%;
+        top: 25%;
+        will-change: transform;
+        
+    }
+    .line_1 {
+
+        border: 1px solid #6FAA34;
+        height: 100%;
+        width: 100%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;   
+        will-change: transform; 
+
+
+    }
+
+    .line_2 {
+        border: 1px solid #464646;
+        height: 90%;
+        width: 90%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        will-change: transform;
+    }
+
+
+    .line_3 {
+        border: 1px solid #464646;     
+        height: 80%;
+        width: 80%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        will-change: transform;
+    }
+
+
+    .line_4 {        
+        border: 1px solid #464646;
+        height: 70%;
+        width: 70%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        will-change: transform;
+    }
+
+
+    .line_5 {       
+        border: 1px solid #464646;
+        height: 60%;
+        width: 60%;
+        border-radius: 1000px;
+        margin: auto;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        will-change: transform;
+    }
+
+
+    .top_line_srvc {
+        /* border: 1px solid #464646;  */
+        height: 60%;
+        width: 80%;     
+        margin: auto;
+        position: relative;
+        text-align: center;  
+        top: 35%;       
+        justify-content: center;
+        align-self: center;  
+        z-index: 2;    
+    
+    }
+
+    .top_line_srvc h1, 
+    .top_line_srvc h2, 
+    .top_line_srvc h3,
+     .top_line_srvc h4, 
+     .top_line_srvc h5, 
+     .top_line_srvc h6 {
+            font-size: 24px;  
+             color: #fff;
+              line-height: 2;
+           
+    }
+
+ 
+
+
+
+
+
+    .top_line_srvc .design{ color: #9A76BE;}
+    
+    .top_line_srvc .animaaton{ color: #FBA7A7;}
+    
+    .top_line_srvc .application{ color: #6FAA34;}
+    
+    .top_line_srvc .marketing{ color: #3B9D91;}
+    
+    .top_line_srvc .promotion{ color: #6F7DCF;}
+
+
+
+
+    canvas{ min-width: 100vw;  }
+
+
+
+    header{ position: fixed;}
+
+
+
+    .offer {
+        font-family: 'Playfair Display', serif;
+    }
+
+    .card1 {
+        width: 520px;
+        margin: auto;
+        padding-top: 2vh;
+        margin-left: 5%;
+        opacity: 0;
+    }
+}
+
+
+ 
+
+.dev_1, .dev_2, .dev_3, .dev_4, .dev_5, .dev_6{
+    position: absolute;
+    opacity: 0;
+    left: 40%;
+    top: 40%;
+    scale: 0; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #000000;
+    will-change: transform;
+
+
+}
+
+
+.dev_7, .dev_8, .dev_9, .dev_10, .dev_11, .dev_12{
+    position: absolute;
+    opacity: 0;
+    right: 40%;
+    top: 40%;
+    scale: 0; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #000000;
+    will-change: transform;
+}
+
+
+.anim_1, .anim_2, .anim_3, .anim_4, .anim_5, .anim_6 {
+    position: absolute;
+    opacity: 0;
+    left: 40%;
+    top: 40%;
+    scale: 0; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+
+.anim_7, .anim_8, .anim_9, .anim_10,  .anim_11,  .anim_12{
+    position: absolute;
+    opacity: 0;
+    right: 40%;
+    top: 40%;
+    scale: 0 ; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+ 
+
+
+.brand_1, .brand_2, .brand_3, .brand_4, .brand_5 {
+    position: absolute;
+    opacity: 0;
+    left: 40%;
+    top: 40%;
+    scale: 0; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+
+.brand_6, .brand_7, .brand_8, .brand_9, .brand_10{
+    position: absolute;
+    opacity: 0;
+    right: 40%;
+    top: 40%;
+    scale: 0 ; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+
+
+.mark_1, .mark_2, .mark_3, .mark_4, .mark_5   {
+    position: absolute;   
+    left: 40%;
+    top: 40%;
+    scale: 0;     
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+
+.mark_6, .mark_7, .mark_8, .mark_9, .mark_10 {
+    position: absolute;   
+    right: 40%;
+    top: 40%;
+    scale: 0; 
+    padding:10px;
+    border-radius: 100px;
+    width: 50px;
+    height:50px;
+    margin: auto;
+    background-color: #110035;
+    will-change: transform;
+}
+
+ 
+.svg1{  width: 100vw;}
+ 
+ #highBox{ visibility: hidden;}
+ .bridge{ position: relative; min-height: 100vh;}
+ .bridgeScroll{ position: absolute; z-index: 9; margin-top: 0vh; left: 90vw;  height: 200px;}
+
+
+ .microService{ width: 300px; height: 400px; margin: 50px;
+    background-color: red; 
+    border-radius: 20px; opacity: 0.5;}
+
+    
+
+
+section {
+    min-height: 100vh;
+}
+
+
+.scrollContainer{
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ 
+  
+
+
+@media (min-width: 1024px) {
+    .heroText p {
+        font-family: 'Elsie', cursive;
+        font-size: 10rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .heroText p {
+        font-family: 'Elsie', cursive;
+        font-size: 11rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .heroText p {
+        font-family: 'Elsie', cursive;
+        font-size: 12rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+    }
+
+}
+
+
+@media (min-width: 1536px) {
+
+    .cloude2 {
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        right: 100px;
+        scale: 2;
+        opacity: 0.5;
+    }
+
+    .kolkata {
+        font-size: 2rem;
+        color: red;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        padding-bottom: 40vh;
+    }
+
+    .heroText p {
+        font-family: 'Elsie', cursive;
+        font-size: 14rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+    }
+}
+
+
+@media (min-width: 1920px) {
+
+    .cloude2 {
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        right: 100px;
+        scale: 2;
+        opacity: 0.5;
+    }
+
+    .kolkata {
+        font-size: 2rem;
+        color: red;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        padding-bottom: 40vh;
+    }
+
+    .heroText p {
+        font-family: 'Elsie', cursive;
+        font-size: 16rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+    }
+
+
+
+
+
+}
